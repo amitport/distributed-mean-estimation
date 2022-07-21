@@ -21,7 +21,7 @@ class Transform(ABC):
 
     @abstractmethod
     def forward(self, x) -> FOut:
-        """
+        """\
         :param x: An object to transform
         :return: FOut Transformed x and additional context, will be used as an input for '_backward'
                       the optional 'bitrate' propagates as a metric
